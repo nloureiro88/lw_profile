@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  min-width: 300px
 }
 
 body {
@@ -36,16 +37,23 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 td {
   padding: 1rem;
 }
 
+.mobile {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #sidebar {
   position: fixed;
   background-color: #738598;
-  width: 400px;
+  width: 30%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -57,9 +65,9 @@ td {
 
 #sidebar a {
   font-family: 'Major Mono Display', monospace;
-  font-size: 1.1rem;
   color: #dfe2e2;
   padding: 1rem;
+  margin: 1rem;
 
 }
 
@@ -68,7 +76,7 @@ td {
 }
 
 #page-content {
-  margin-left: 300px;
+  margin-left: 30%;
 }
 
 #page-content a {
@@ -80,7 +88,7 @@ td {
 }
 
 .container {
-  width: 500px;
+  width: 50%;
   padding: 2rem;
   margin: 2rem auto;
   background-color: #dfe2e2;
@@ -122,8 +130,7 @@ td {
 }
 
 .list-inline li {
-  margin: 0 2rem;
-  margin: 0 1rem;
+  margin: 1rem;
   display: inline-block;
 }
 
@@ -135,20 +142,19 @@ td {
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
+  html {
+    font-size: 14px;
   }
-
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
 }
