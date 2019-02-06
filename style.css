@@ -43,7 +43,6 @@ td {
   padding: 1rem;
 }
 
-
 .container {
   width: 500px;
   padding: 2rem;
@@ -55,6 +54,10 @@ td {
 
 .text-center {
   text-align: center;
+}
+
+.profile p {
+  margin-bottom: 1.75rem;
 }
 
 .profile-pic {
