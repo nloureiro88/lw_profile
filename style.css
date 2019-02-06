@@ -32,15 +32,51 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #738598;
 }
 
-a:hover {
-  color: #1cb3c8;
+ul {
+  list-style: none;
 }
 
 td {
   padding: 1rem;
+}
+
+#sidebar {
+  position: fixed;
+  background-color: #738598;
+  width: 400px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#sidebar li {
+  margin-top: 2rem;
+}
+
+#sidebar a {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.1rem;
+  color: #dfe2e2;
+  padding: 1rem;
+
+}
+
+#sidebar a:hover {
+  color: #113f67;
+}
+
+#page-content {
+  margin-left: 300px;
+}
+
+#page-content a {
+  color: #738598;
+}
+
+#page-content a:hover {
+  color: #1cb3c8;
 }
 
 .container {
@@ -67,7 +103,7 @@ td {
   height: auto;
 }
 
-.button-blue {
+#page-content .button-blue {
   border-radius: 3px;
   background-color: #1cb3c8;
   color: #113f67;
@@ -75,7 +111,7 @@ td {
   padding: 1rem;
 }
 
-.button-blue:hover {
+#page-content .button-blue:hover {
   color: #1cb3c8;
   background-color: #113f67;
 }
@@ -102,6 +138,7 @@ td {
   .container {
     width: 700px;
   }
+
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
