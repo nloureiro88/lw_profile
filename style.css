@@ -1,0 +1,114 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  color: #3c415e;
+  background-color: #113f67;
+}
+
+h1, h2, h3 {
+  font-family: 'Major Mono Display', monospace;
+  line-height: 1.75;
+}
+
+h1 {
+  color: #1cb3c8;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #113f67;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #1cb3c8;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #738598;
+}
+
+a:hover {
+  color: #1cb3c8;
+}
+
+td {
+  padding: 1rem;
+}
+
+
+.container {
+  width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #dfe2e2;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #738598;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 40%;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  height: auto;
+}
+
+.button-blue {
+  border-radius: 3px;
+  background-color: #1cb3c8;
+  color: #113f67;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.button-blue:hover {
+  color: #1cb3c8;
+  background-color: #113f67;
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.list-inline li {
+  margin: 0 2rem;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.poster {
+  border-radius: 3px;
+  max-height: 250px;
+  width: auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
